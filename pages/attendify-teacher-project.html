@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attendify - Teacher | Muhammad Osman</title>
+  <meta name="description" content="Attendify - Teacher: A smart Android app for managing attendance, subjects, and reports. Developed by Android app developer Muhammad Osman." />
+  <meta name="keywords" content="Attendify Teacher app, Android attendance app, teacher attendance app, Muhammad Osman app developer, Firebase Kotlin app" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../mediaqueries.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="desktop-nav" class="fade-in">
+    <div class="logo">Muhammad Osman</div>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav id="hamburger-nav" class="fade-in">
+    <div class="logo">Muhammad Osman</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Project Section -->
+  <section id="projects" class="fade-in-on-scroll">
+    <div class="section__text">
+      <h1 class="title">Attendify - Teacher</h1>
+      <p class="section__text__p2">Smart attendance management app for teachers</p>
+    </div>
+
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="..//assets/TeacherAttendance.png" alt="Attendify App Screenshot" class="project-img" />
+      </div>
+      <div class="details-container">
+        <h3>Key Features:</h3>
+        <ul style="list-style: none;">
+          <li>📅 Add & manage subjects with ease</li>
+          <li>✅ Mark and track daily attendance</li>
+          <li>📊 Generate attendance reports</li>
+          <li>☁️ Data synced using Firebase Firestore</li>
+          <li>🔐 Secure login using Firebase Auth</li>
+        </ul>
+        <br />
+        <h3>Tech Stack:</h3>
+        <p>Kotlin, Firebase Auth, Cloud Firestore, MVVM architecture</p>
+        <br />
+        <div class="btn-container">
+          <a href="https://github.com/creativeosman/Attendify-Teacher" class="btn btn-color-1" target="_blank" style="text-decoration: none;">GitHub</a>
+          <a href="https://play.google.com/store/apps/details?id=com.yourapp.id" class="btn btn-color-2" target="_blank"style="text-decoration: none;">View on Play Store</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Muhammad Osman. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Script for hamburger toggle -->
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".menu-links");
+      const icon = document.querySelector(".hamburger-icon");
+      menu.classList.toggle("open");
+      icon.classList.toggle("open");
+    }
+
+    // Fade-in on scroll
+    const faders = document.querySelectorAll('.fade-in-on-scroll');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+
+    faders.forEach(fader => observer.observe(fader));
+  </script>
+</body>
+</html>

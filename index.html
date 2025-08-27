@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Muhammad Usman | Mobile App Developer</title>
+  <meta name="description"
+    content="I am Mobile App Developer currently studying at the University of Sargodha. Expert in Kotlin, Java, Flutter, Firebase, and Finance-Related mobile solutions." />
+  <meta name="keywords"
+    content="Muhammad Usman, Mobile Developer, Android Developer, Flutter Developer, Kotlin, Java, Firebase, Jetpack Compose, Attendance App, University of Sargodha, Mobile App Developer Pakistan, Attendify-Teacher, Attendify-Student" />
+  <meta name="author" content="Muhammad Usman" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Muhammad Usman – Mobile App Developer" />
+  <meta property="og:description"
+    content="Mobile app developer currently studying at University of Sargodha. Expert in Kotlin, Flutter, Firebase. Builds smart apps for attendance, education, and finance." />
+  <meta property="og:image" content="https://devmuhammadosman.com/assets/profile_pic.jpg" />
+  <meta property="og:url" content="https://devmuhammadosman.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Muhammad Usman – Mobile App Developer" />
+  <meta name="twitter:description"
+    content="Kotlin, Flutter, Firebase – mobile apps by Muhammad Usman, Mobile App Developer currently studying at University of Sargodha." />
+  <meta name="twitter:image" content="https://devmuhammadosman.com/assets/profile_pic.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Usman",
+    "alternateName": "Muhammad Usman",
+    "jobTitle": "Mobile App Developer",
+    "url": "https://devmuhammadosman.com",
+    "image": "https://devmuhammadosman.com/assets/profile_pic.jpg",
+    "image": "https://devmuhammadosman.com/assets/profile_pic2.jpeg",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Sargodha"
+    },
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Student",
+      "educationalRequirements": "BS Software Engineering - In Progress (5th Semester)"
+    },
+    "sameAs": [
+      "https://github.com/Built-By-Usman",
+      "https://www.linkedin.com/in/builtbyusman"
+    ],
+    "description": "Mobile App Developer currently studying at University of Sargodha. Skilled in Kotlin, Flutter, Firebase, Java, Jetpack Compose, and building mobile apps for education and finance."
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Navbar (Desktop + Hamburger) -->
+  <nav id="desktop-nav">
+    <div class="logo">Muhammad Usman</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Muhammad Usman</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <section id="profile" class="slide-up">
+    <div class="section__pic-container">
+      <img src="./assets/profile_pic2.jpeg" alt="Muhammad Usman profile picture" class="profile-picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Muhammad Usman</h1>
+      <p class="section__text__p2">Mobile App Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2"
+          onclick="window.open('https://drive.google.com/file/d/1-M9r4oy0bIBwC40rUn2mawvcO9rEZrdX/view?usp=drive_link')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"
+          onclick="window.open('https://www.linkedin.com/in/builtbyusman', '_blank')" />
+        <img src="./assets/github.png" alt="GitHub" class="icon"
+          onclick="window.open('https://github.com/Built-By-Usman', '_blank')" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="fade-in-on-scroll">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-us.jpg" alt="About Image" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience" class="icon" />
+            <h3>Experience</h3>
+            <p>1+ years <br />Android & Flutter Development</p>
+            <p>1+ years <br />UI/UX Design</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education" class="icon" />
+            <h3>Education</h3>
+            <p>BS Software Engineering (In Progress)<br />University of Sargodha</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am a Mobile App Developer specializing in Android (Kotlin/Java) and Flutter. I have experience
+            building educational, attendance, and finance-related apps. I strive to write scalable, maintainable code
+            and create intuitive, user-friendly mobile experiences. Passionate about solving real-world problems through
+            mobile technology.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="fade-in-on-scroll">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">App Development</h2>
+          <div class="article-container">
+            <article><img src="./assets/checkmark.png" class="icon" />
+              <div>
+                <h3>Flutter</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article><img src="./assets/checkmark.png" class="icon" />
+              <div>
+                <h3>Kotlin</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article><img src="./assets/checkmark.png" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article><img src="./assets/checkmark.png" class="icon" />
+              <div>
+                <h3>XML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article><img src="./assets/checkmark.png" class="icon" />
+              <div>
+                <h3>Jetpack Compose</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article><img src="./assets/checkmark.png" class="icon" />
+              <div>
+                <h3>Firebase</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Additional Skills</h2>
+          <div class="article-container">
+            <article><img src="./assets/checkmark.png" class="icon" />
+              <div>
+                <h3>OOP</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article><img src="./assets/checkmark.png" class="icon" />
+              <div>
+                <h3>JSON</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article><img src="./assets/checkmark.png" class="icon" />
+              <div>
+                <h3>REST APIs</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article><img src="./assets/checkmark.png" class="icon" />
+              <div>
+                <h3>HTML5</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article><img src="./assets/checkmark.png" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article><img src="./assets/checkmark.png" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="fade-in-on-scroll">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="experience-details-container">
+
+    <!-- Row 1 -->
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/TeacherAttendance.png" alt="Attendify Teacher" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Attendify - Teacher</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='pages/attendify-teacher-project.html'">Details</button>
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://play.google.com/store/apps/details?id=com.muhammadosman.attendify.teacher'">Play Store</button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/StudentAttendance.png" alt="Attendify Student" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Attendify - Student</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='pages/attendify-student-project.html'">Details</button>
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://play.google.com/store/apps/details?id=com.muhammadosman.attendify.student'">Play Store</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/installment_management.png" alt="Installment Management" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Installment Management</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='pages/stock-management.html'">Details</button>
+          <button class="btn btn-color-2 project-btn">In Progress</button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/erp.png" alt="ERP Software" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">ERP Software</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='pages/erp.html'">Details</button>
+          <button class="btn btn-color-2 project-btn"
+            onclick="window.open('https://drive.google.com/file/d/14E3Rh-KEbGF1yvTBtodh0pMx6Ifp5VjV/view?usp=sharing', '_blank')">Google Drive</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/Silent Salah.png" alt="Silent Salah" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Silent Salah</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='pages/silent-salah.html'">Details</button>
+          <button class="btn btn-color-2 project-btn">In Publishing</button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/Silent Salah.png" alt="Silent Salah" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Silent Salah</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='pages/silent-salah.html'">Details</button>
+          <button class="btn btn-color-2 project-btn">In Publishing</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="fade-in-on-scroll">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/fiverr.png" alt="Fiverr icon" class="icon contact-icon" />
+        <p><a href="https://www.fiverr.com/app_dev_osman" target="_blank">Fiverr Profile</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/builtbyusman" target="_blank">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" />
+        <p><a href="https://github.com/Built-By-Usman" target="_blank">GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>&#169; 2025 Muhammad Usman. All Rights Reserved.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

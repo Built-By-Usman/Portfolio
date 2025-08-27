@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ERP | Muhammad Osman</title>
+  <meta name="description" content="Attendify - Teacher: A smart Android app for managing attendance, subjects, and reports. Developed by Android app developer Muhammad Osman." />
+  <meta name="keywords" content="Attendify Teacher app, Android attendance app, teacher attendance app, Muhammad Osman app developer, Firebase Kotlin app" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../mediaqueries.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="desktop-nav" class="fade-in">
+    <div class="logo">Muhammad Osman</div>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav id="hamburger-nav" class="fade-in">
+    <div class="logo">Muhammad Osman</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Project Section -->
+  <section id="projects" class="fade-in-on-scroll">
+    <div class="section__text">
+      <h1 class="title">Silent Salah</h1>
+      <p class="section__text__p2">Stay focused in Salah – we silence your phone at the right time.</p>
+    </div>
+
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="..//assets/Silent Salah.png" alt="Silent Salah Screenshot" class="project-img" />
+      </div>
+    <div class="details-container">
+  <h3>Key Features:</h3>
+  <ul style="list-style: none;">
+  <li>🕌 Auto-Silent Mode: Mutes phone at each prayer time</li>
+  <li>🔔 Auto-Restore Sound: Unmutes phone after prayer ends</li>
+  <li>📅 Accurate Timings: Based on your location and daily updates</li>
+  <li>📱 Background Service: Works even when app is closed</li>
+  <li>⚙️ Simple Setup: One-time permission, no manual control needed</li>
+</ul>
+
+  <br />
+  <h3>Tech Stack:</h3>
+  <p>Kotlin, Foreground Services, Animations and Alarm Manager</p>
+  <br />
+  <div class="btn-container">
+    <a href="https://github.com/creativeosman/ERP-App" class="btn btn-color-1" target="_blank" style="text-decoration: none;">GitHub</a>
+    <a href="https://play.google.com/store/apps/details?id=com.yourapp.erpid" class="btn btn-color-2" target="_blank" style="text-decoration: none;">View on Play Store</a>
+  </div>
+</div>
+
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Muhammad Osman. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Script for hamburger toggle -->
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".menu-links");
+      const icon = document.querySelector(".hamburger-icon");
+      menu.classList.toggle("open");
+      icon.classList.toggle("open");
+    }
+
+    // Fade-in on scroll
+    const faders = document.querySelectorAll('.fade-in-on-scroll');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+
+    faders.forEach(fader => observer.observe(fader));
+  </script>
+</body>
+</html>

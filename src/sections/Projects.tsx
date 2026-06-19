@@ -1,8 +1,6 @@
 import { SectionHeading } from '../components/SectionHeading';
 import { Card } from '../components/Card';
-import { Button } from '../components/Button';
 import { PROJECTS } from '../data/portfolio';
-import { ExternalLink } from 'lucide-react';
 
 export const Projects = () => {
   return (

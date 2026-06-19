@@ -1,7 +1,5 @@
 import { SectionHeading } from '../components/SectionHeading';
 import { motion } from 'framer-motion';
-import { Button } from '../components/Button';
-import { PlayStoreIcon } from '../components/Icons';
 
 export const About = () => {
   return (

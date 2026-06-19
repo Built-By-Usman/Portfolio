@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Button } from '../components/Button';
 import profilePic from '../assets/profile_pic.png';
+import { PlayStoreIcon } from '../components/Icons';
 
 export const Hero = () => {
   const tagline = "Creativity runs in my blood — I turn ideas into powerful digital experiences.";
@@ -68,10 +69,28 @@ export const Hero = () => {
             <Button href="#projects" variant="primary" className="w-full sm:w-auto px-10 py-4 text-lg">
               View Projects
             </Button>
-            <Button href="#contact" variant="outline" className="w-full sm:w-auto px-10 py-4 text-lg">
+            <Button href="https://wa.me/923041222383" variant="outline" className="w-full sm:w-auto px-10 py-4 text-lg">
               Hire Me
             </Button>
           </motion.div>
+
+          <motion.a
+            href="https://play.google.com/store/apps/dev?id=6607409488168138981"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1 }}
+            className="mt-12 max-w-sm mx-auto bg-white/5 border border-accent/30 rounded-2xl p-4 flex items-center gap-4 hover:bg-white/10 hover:border-accent/50 hover:scale-105 transition-all cursor-pointer shadow-[0_0_20px_rgba(195,108,30,0.15)] group block text-left"
+          >
+            <div className="bg-accent/20 p-3 rounded-xl text-accent group-hover:scale-110 transition-transform">
+              <PlayStoreIcon size={28} />
+            </div>
+            <div>
+              <h4 className="text-white font-bold text-lg leading-tight">10+ Published Apps</h4>
+              <p className="text-gray-400 text-sm mt-1 group-hover:text-gray-300 transition-colors">View Play Store Profile &rarr;</p>
+            </div>
+          </motion.a>
         </div>
       </div>
     </section>

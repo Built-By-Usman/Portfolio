@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Button } from '../components/Button';
 import { Mail, Phone, MapPin } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from '../components/Icons';
+import { GithubIcon, LinkedinIcon, PlayStoreIcon } from '../components/Icons';
 
 import { CheckCircle } from 'lucide-react';
 
@@ -43,7 +43,7 @@ export const CTA = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <Button 
-              href="mailto:builtbyusman@gmail.com" 
+              href="https://wa.me/923041222383" 
               className="bg-white text-accent hover:bg-gray-100 w-full sm:w-auto font-bold text-xl px-10 py-5 rounded-xl shadow-2xl hover:scale-105 transition-transform"
             >
               Hire Me Now
@@ -92,6 +92,10 @@ export const Contact = () => {
             </a>
             <a href="https://github.com/Built-By-Usman" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/5 rounded-full hover:bg-accent/20 hover:text-accent transition-colors">
               <GithubIcon size={24} />
+            </a>
+            <a href="https://play.google.com/store/apps/dev?id=6607409488168138981" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/5 rounded-full hover:bg-accent/20 hover:text-accent transition-colors relative group">
+              <PlayStoreIcon size={24} />
+              <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-accent text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">10+ Apps</span>
             </a>
           </div>
         </div>

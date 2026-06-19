@@ -62,7 +62,7 @@ export const PROJECTS = [
     tech: ["Flutter", "Firebase", "Supabase"],
   },
   {
-    title: "Grocery Store App",
+    title: "E-commerce Store with Admin Panel",
     description: "Full-stack ordering system with product browsing, cart management, and order tracking.",
     tech: ["Flutter", "FastAPI", "Supabase"],
   },

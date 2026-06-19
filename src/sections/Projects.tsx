@@ -32,12 +32,6 @@ export const Projects = () => {
                 </div>
               </div>
               
-              <div className="pt-6 border-t border-white/10 mt-auto flex gap-4">
-                <Button variant="outline" className="w-full py-2 text-sm flex items-center justify-center gap-2">
-                  <ExternalLink size={16} />
-                  View Project
-                </Button>
-              </div>
             </Card>
           ))}
         </div>

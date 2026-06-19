@@ -23,11 +23,11 @@ export const ContentCreator = () => {
               </p>
               
               <div className="flex gap-4">
-                <a href="#" className="flex flex-col items-center justify-center p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-accent/50 transition-all group">
+                <a href="https://www.tiktok.com/@built_by_usman" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-accent/50 transition-all group">
                   <Video size={28} className="text-gray-400 group-hover:text-accent mb-2" />
                   <span className="text-sm font-medium">TikTok</span>
                 </a>
-                <a href="#" className="flex flex-col items-center justify-center p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-accent/50 transition-all group">
+                <a href="https://www.instagram.com/built_by_usman" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-accent/50 transition-all group">
                   <InstagramIcon size={28} className="text-gray-400 group-hover:text-accent mb-2" />
                   <span className="text-sm font-medium">Instagram</span>
                 </a>
